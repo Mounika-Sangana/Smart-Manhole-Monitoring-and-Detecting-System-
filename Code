@@ -1,4 +1,4 @@
-#This code needs to be run in Thonny Python or any other compatible compilers
+#This code needs to be run in Thonny Python or any other Raspberry Pi Pyhton compatible compilers
 
 import RPi.GPIO as GPIO
 import Adafruit_MCP3008
