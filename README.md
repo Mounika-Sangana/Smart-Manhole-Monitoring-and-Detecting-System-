@@ -24,24 +24,24 @@ The smart manhole monitoring and detecting system utilizes Raspberry Pi as a cen
 
 Operation :
 The operation of the smart manhole monitoring and detecting system involves several steps: 
-Initialization: The system initializes upon power-up, with the Raspberry Pi booting up and initializing all connected sensors and modules. 
+1) Initialization: The system initializes upon power-up, with the Raspberry Pi booting up and initializing all connected sensors and modules. 
 
-Sensor Monitoring: The system continuously monitors sensor data in realtime. The gas sensor detects toxic gases, the water level sensor detects water levels, the door monitor sensor tracks the position of the manhole cover, and the temperature sensor detects temperature variations within the manhole. 
+2) Sensor Monitoring: The system continuously monitors sensor data in realtime. The gas sensor detects toxic gases, the water level sensor detects water levels, the door monitor sensor tracks the position of the manhole cover, and the temperature sensor detects temperature variations within the manhole. 
 
-Threshold Comparison: The system compares the sensor readings with predefined threshold values. If any sensor reading exceeds its threshold, indicating a potential hazard, the system proceeds to the next step. 
+3) Threshold Comparison: The system compares the sensor readings with predefined threshold values. If any sensor reading exceeds its threshold, indicating a potential hazard, the system proceeds to the next step. 
 
-Alert Generation: 
+4) Alert Generation: 
       -> Gas Detection Alert: If toxic gases are detected, the system generates an alert                 indicating the presence of hazardous gases. This alert includes information about the           gas levels and the location of the manhole. 
       -> Water Level Alert: If the water level rises above the threshold, signaling a risk of            flooding, the system generates an alert specifying the increased water level and the            manhole location. 
       -> Door Status Alert: If the door monitor sensor detects an open manhole cover,                    indicating a potential safety hazard, the system generates an alert indicating the              open position of the manhole cover and its location. 
       -> Temperature Increase Alert: If the temperature sensor detects a significant increase            in temperature, indicating a potential fire or overheating hazard, the system                   generates an alert specifying the temperature rise and the manhole location
-5)Alert Transmission: Upon generating an alert, the system sends a notification to concerned authorities via SMS using the GSM module. The message includes relevant details such as the type of alert, sensor readings, and the precise location of the manhole obtained from the GPS module. 
+5) Alert Transmission: Upon generating an alert, the system sends a notification to concerned authorities via SMS using the GSM module. The message includes relevant details such as the type of alert, sensor readings, and the precise location of the manhole obtained from the GPS module. 
 
-6)Counter Mechanism Activation: If the temperature exceeds the predefined limit and triggers an alert, the system activates a counter mechanism to track the number of occurrences. 
+6) Counter Mechanism Activation: If the temperature exceeds the predefined limit and triggers an alert, the system activates a counter mechanism to track the number of occurrences. 
 
-7)Temperature Regulation: In response to a temperature increase alert, the system activates a DC fan using a relay to help regulate the temperature within the manhole, mitigating the risk of overheating. 
+7) Temperature Regulation: In response to a temperature increase alert, the system activates a DC fan using a relay to help regulate the temperature within the manhole, mitigating the risk of overheating. 
 
-8)Toxic Gas Neutralization: 
+8) Toxic Gas Neutralization: 
 - If toxic gases are detected, the system activates a solenoid valve containing neutralizing agents. 
 - The solenoid valve releases neutralizing agents into the manhole to neutralize the toxic gases, minimizing their harmful effects on the surrounding environment and public health.
 9) Continuous Monitoring: The system continues to monitor sensor data and respond to any detected hazards or abnormal conditions, ensuring the safety and integrity of the manhole infrastructure. 
